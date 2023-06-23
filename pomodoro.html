@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="pomodoro.css">
+</head>
+<body>
+<main class="app">
+  <div class="container">
+    <div class="content">
+      <p>
+          <div>
+            <span id="timer"></span>
+          </div>
+          <button id="btn_start" class="btn_management">start</button>
+          <button id="btn_pause" class="btn_management">pause</button>
+          <button id="btn_reset" class="btn_management">reset</button>
+      </p>
+      <p>
+          <button id="btn_pomodoro" class="btn_default">Pomodoro</button>
+          <button id="btn_shortbreak" class="btn_default">Short break</button>
+          <button id="btn_longbreak" class="btn_default">Long break</button>
+      </p>
+      <p>
+          <button id="btn_custom" class="btn_management">
+            <label for="ipt_custom">Custom:</label>
+          </button>
+          <input type="number" id="ipt_custom" class="btn_management" value="45" min="0" max="100000000">
+          <select id="custom_units" class="btn_management">
+            <option value="seconds">seconds</option>
+            <option value="minutes" selected>minutes</option>
+            <option value="hours">hours</option>
+          </select>
+      </p>
+    </div>
+  </div>
+</main>
+<script type="text/javascript" src="pomodoro.js"></script>
+</body>
+</html>
